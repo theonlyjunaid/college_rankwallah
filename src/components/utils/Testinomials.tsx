@@ -29,7 +29,7 @@ const Testinomials = () => {
                     Loved by DTU Students
                 </h2>
                 <p className="text-gray-500 md:text-lg">
-                    Here's what our users have to say about Rankwallah
+                    Here&apos;s what our users have to say about Rankwallah
                 </p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -47,7 +47,7 @@ const Testinomials = () => {
                             </div>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-gray-600">"{testimonial.content}"</p>
+                            <p className="text-gray-600">&quot;{testimonial.content}&quot;</p>
                         </CardContent>
                     </Card>
                 ))}

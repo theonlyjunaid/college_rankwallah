@@ -138,11 +138,11 @@ export default function Result({ roll_number }: {
                         <p className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">{user.aggregatedCgpa.toFixed(2)}</p>
                     </div>
                     <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 sm:p-8 rounded-xl border transition-all transform hover:-translate-y-1">
-                        <p className="text-gray-700 font-semibold text-base sm:text-lg">{user.course}'s Rank</p>
+                        <p className="text-gray-700 font-semibold text-base sm:text-lg">{user.course}&apos;s Rank</p>
                         <p className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">#{user.courseRank}</p>
                     </div>
                     <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 sm:p-8 rounded-xl border transition-all transform hover:-translate-y-1">
-                        <p className="text-gray-700 font-semibold text-base sm:text-lg">{user.discipline}'s Rank</p>
+                        <p className="text-gray-700 font-semibold text-base sm:text-lg">{user.discipline}&apos;s Rank</p>
                         <p className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">#{user.majorRank}</p>
                     </div>
                 </div>
@@ -154,8 +154,8 @@ export default function Result({ roll_number }: {
                                 <TableHead className="font-bold text-gray-900 whitespace-nowrap">Semester</TableHead>
                                 <TableHead className="font-bold text-gray-900 whitespace-nowrap">Credits</TableHead>
                                 <TableHead className="font-bold text-gray-900 whitespace-nowrap">CGPA</TableHead>
-                                <TableHead className="font-bold text-gray-900 whitespace-nowrap">{user.course}'s Rank</TableHead>
-                                <TableHead className="font-bold text-gray-900 whitespace-nowrap">{user.discipline}'s Rank</TableHead>
+                                <TableHead className="font-bold text-gray-900 whitespace-nowrap">{user.course}&apos;s Rank</TableHead>
+                                <TableHead className="font-bold text-gray-900 whitespace-nowrap">{user.discipline}&apos;s Rank</TableHead>
                             </TableRow>
                         </TableHeader>
                         <TableBody>

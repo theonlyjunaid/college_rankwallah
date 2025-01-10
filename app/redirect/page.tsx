@@ -1,13 +1,13 @@
 "use client"
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { Heart, Sparkles } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const RedirectPage = () => {
+const RedirectContent = () => {
     const [countdown, setCountdown] = useState(20)
     const router = useRouter()
     const searchParams = useSearchParams()
@@ -72,7 +72,9 @@ const RedirectPage = () => {
                             whileTap={{ scale: 0.95 }}
                             className="transform transition-all w-[200px] sm:w-[225px] md:w-[250px]"
                         >
-                            <img
+                            <Image
+                                width={200}
+                                height={200}
                                 src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=448990&theme=light"
                                 alt="NoCage - Breaking free from career constraints | Product Hunt"
                                 className="w-full h-auto hover:opacity-90 transition-opacity rounded-lg shadow-md"
@@ -83,6 +85,14 @@ const RedirectPage = () => {
 
             </motion.div>
         </div>
+    )
+}
+
+const RedirectPage = () => {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <RedirectContent />
+        </Suspense>
     )
 }
 
