@@ -65,18 +65,18 @@ const RedirectContent = () => {
                     </p>
                     <div className="flex justify-center items-center">
                         <motion.a
-                            href="https://www.producthunt.com/posts/nocage"
+                            href="https://www.producthunt.com/posts/nocage?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-nocage"
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="transform transition-all w-[200px] sm:w-[225px] md:w-[250px]"
+                            className="transform transition-all w-[250px]"
                         >
                             <Image
-                                width={200}
-                                height={200}
-                                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=448990&theme=light"
-                                alt="NoCage - Breaking free from career constraints | Product Hunt"
+                                width={250}
+                                height={54}
+                                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=775417&theme=light&t=1736622176501"
+                                alt="NOCAGE - Startup Networking: Find Co-Founders, Grants & Funding! | Product Hunt"
                                 className="w-full h-auto hover:opacity-90 transition-opacity rounded-lg shadow-md"
                             />
                         </motion.a>
