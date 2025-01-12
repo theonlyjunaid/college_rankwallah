@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import { GraduationCap, Menu, X } from "lucide-react";
+import Script from 'next/script';
 // import { UserButton, SignInButton, SignedOut, SignedIn } from "@clerk/nextjs";
 
 export default function Header() {
@@ -29,6 +30,16 @@ export default function Header() {
     return (
         <header className={`header_navbar sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'border-b shadow-sm bg-white/90 backdrop-blur-md' : 'bg-white/80 backdrop-blur-sm'
             }`}>
+
+            <Script id="google-analytics">
+                {` window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GCKM20W05T');`}
+            </Script>
+            <Script src="https://www.googletagmanager.com/gtag/js?id=G-GCKM20W05T" />
+
             <div className="container flex h-16 items-center justify-between px-4">
                 <Link href="/" className="flex items-center space-x-2 group">
                     <GraduationCap className="h-8 w-8 text-gray-800 transition-transform group-hover:scale-110" />
