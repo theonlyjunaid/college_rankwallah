@@ -8,6 +8,7 @@ import {
 import "./globals.css";
 import { Metadata } from "next";
 
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "DTU 2k21, 2k22 and 2k23 result analyser",
@@ -22,7 +23,9 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body>
-          <main>{children}</main>
+          <main>
+            <Analytics />
+            {children}</main>
         </body>
       </html>
     </ClerkProvider>
