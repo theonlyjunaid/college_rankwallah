@@ -43,7 +43,7 @@ const RedirectContent = () => {
 
                 <div className="text-center mb-6 sm:mb-8 md:mb-10">
                     <p className="text-gray-700 text-base sm:text-lg md:text-xl font-medium">
-                        Aap {countdown} seconds mein redirect ho jayenge apke result pr
+                        You will be redirected to your results in {countdown} seconds
                     </p>
                 </div>
 
@@ -58,10 +58,10 @@ const RedirectContent = () => {
                         <Sparkles className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-amber-500" />
                     </div>
                     <p className="text-gray-700 text-center text-sm sm:text-base md:text-lg mb-6 sm:mb-8 px-2 sm:px-4">
-                        Maine placement nahi li kyunki mujhe <Link href={"https://nocage.in"} className="font-semibold text-orange-600">NoCage.in</Link> pe pura bharosa hai.
-                        Ye mere career ka sabse bada decision hai.
-                        Kya aap Product Hunt par NoCage ko support karoge?
-                        Aapka ek upvote mere sapne ko jeene mein madad karega 💫
+                        I didn't take a placement because I have complete faith in <Link href={"https://nocage.in"} className="font-semibold text-orange-600">NoCage.in</Link>.
+                        This is the biggest decision of my career.
+                        Would you support NoCage on Product Hunt?
+                        Your upvote will help me live my dream 💫
                     </p>
                     <div className="flex justify-center items-center">
                         <motion.a
@@ -72,10 +72,8 @@ const RedirectContent = () => {
                             whileTap={{ scale: 0.95 }}
                             className="transform transition-all w-[250px]"
                         >
-                            <Image
-                                width={250}
-                                height={54}
-                                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=775417&theme=light&t=1736622176501"
+                            <img
+                                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=775417&theme=light&t=1736661783186"
                                 alt="NOCAGE - Startup Networking: Find Co-Founders, Grants & Funding! | Product Hunt"
                                 className="w-full h-auto hover:opacity-90 transition-opacity rounded-lg shadow-md"
                             />

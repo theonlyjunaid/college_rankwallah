@@ -204,6 +204,12 @@ export default function Result({ roll_number }: {
                         size: 1400px;
                         margin: 0;
                     }
+                    .header_navbar {
+                        display: none;
+                    }
+                    .footer_bottom {
+                        display: none;
+                    }
                 }
 
                 @media (max-width: 640px) {

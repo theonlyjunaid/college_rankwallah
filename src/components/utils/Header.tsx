@@ -1,12 +1,14 @@
 "use client"
 import { useState, useEffect } from 'react';
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
 import { GraduationCap, Menu, X } from "lucide-react";
-import { UserButton, SignInButton, SignedOut, SignedIn } from "@clerk/nextjs";
+// import { UserButton, SignInButton, SignedOut, SignedIn } from "@clerk/nextjs";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,7 +27,7 @@ export default function Header() {
     ];
 
     return (
-        <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'border-b shadow-sm bg-white/90 backdrop-blur-md' : 'bg-white/80 backdrop-blur-sm'
+        <header className={`header_navbar sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'border-b shadow-sm bg-white/90 backdrop-blur-md' : 'bg-white/80 backdrop-blur-sm'
             }`}>
             <div className="container flex h-16 items-center justify-between px-4">
                 <Link href="/" className="flex items-center space-x-2 group">
@@ -33,6 +35,13 @@ export default function Header() {
                     <span className="text-2xl font-bold text-gray-800 group-hover:text-gray-900">DTU Rankwallah</span>
                 </Link>
 
+                {pathname !== "/" && <Link
+                    href="/"
+                    className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors rounded-lg hover:bg-gray-100 flex items-center gap-2"
+                >
+
+                    Search Result
+                </Link>}
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex gap-8">
                     {navItems.map((item) => (
@@ -45,6 +54,8 @@ export default function Header() {
                         </Link>
                     ))}
                 </nav>
+
+
 
                 {/* Mobile Navigation */}
                 <button
@@ -71,27 +82,32 @@ export default function Header() {
                     </div>
                 )}
 
-                <div className="flex gap-4 items-center">
-                    <SignedOut>
-                        <SignInButton mode="modal" fallbackRedirectUrl="/dashboard" signUpFallbackRedirectUrl="/onboarding">
-                            <button className="px-4 py-2 rounded-lg bg-gray-800 text-white hover:bg-gray-900 transition-colors">
-                                Sign In
-                            </button>
-                        </SignInButton>
-                    </SignedOut>
 
-                    <SignedIn>
-                        <UserButton
-                            afterSignOutUrl="/"
-                            appearance={{
-                                elements: {
-                                    avatarBox: "w-8 h-8 rounded-full"
-                                }
-                            }}
-                        />
-                    </SignedIn>
-                </div>
             </div>
         </header>
     );
 }
+
+
+
+
+// <div className=" gap-4 items-center hidden">
+// <SignedOut>
+//     <SignInButton mode="modal" fallbackRedirectUrl="/dashboard" signUpFallbackRedirectUrl="/onboarding">
+//         <button className="px-4 py-2 rounded-lg bg-gray-800 text-white hover:bg-gray-900 transition-colors">
+//             Sign In
+//         </button>
+//     </SignInButton>
+// </SignedOut>
+
+// <SignedIn>
+//     <UserButton
+//         afterSignOutUrl="/"
+//         appearance={{
+//             elements: {
+//                 avatarBox: "w-8 h-8 rounded-full"
+//             }
+//         }}
+//     />
+// </SignedIn>
+// </div>
