@@ -58,7 +58,7 @@ const RedirectContent = () => {
                         <Sparkles className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-amber-500" />
                     </div>
                     <p className="text-gray-700 text-center text-sm sm:text-base md:text-lg mb-6 sm:mb-8 px-2 sm:px-4">
-                        I didn't take a placement because I have complete faith in <Link href={"https://nocage.in"} className="font-semibold text-orange-600">NoCage.in</Link>.
+                        I didn&apos;t take a placement because I have complete faith in <Link href={"https://nocage.in"} className="font-semibold text-orange-600">NoCage.in</Link>.
                         This is the biggest decision of my career.
                         Would you support NoCage on Product Hunt?
                         Your upvote will help me live my dream 💫

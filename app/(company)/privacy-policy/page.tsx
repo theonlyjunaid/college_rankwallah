@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
                 <p className="mb-4">For the purposes of this Privacy Policy:</p>
                 <ul className=" list-inside mb-4">
                     <li><p><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</p></li>
-                    <li><p><strong>Company</strong> (referred to as either 'the Company', 'We', 'Us' or 'Our' in this Agreement) refers to DTU Rankwallah, Delhi Technological University, Shahbad Daulatpur Village, Rohini.</p></li>
+                    <li><p><strong>Company</strong> (referred to as either &apos;the Company&apos;, &apos;We&apos;, &apos;Us&apos; or &apos;Our&apos; in this Agreement) refers to DTU Rankwallah, Delhi Technological University, Shahbad Daulatpur Village, Rohini.</p></li>
                     <li><p><strong>Cookies</strong> are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.</p></li>
                     <li><p><strong>Country</strong> refers to: Delhi, INDIA</p></li>
                     <li><p><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p></li>
@@ -39,7 +39,7 @@ const PrivacyPolicy = () => {
                 <h3 className="text-lg font-semibold mb-2">Usage Data</h3>
                 <p className="mb-4">Usage Data is collected automatically when using the Service.</p>
                 <p className="mb-4">
-                    Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
+                    Usage Data may include information such as Your Device&apos;s Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
                 </p>
                 <p className="mb-4">
                     When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.
@@ -53,10 +53,10 @@ const PrivacyPolicy = () => {
                 </p>
                 <ul className=" list-inside mb-4">
                     <li><strong>Cookies or Browser Cookies.</strong> A cookie is a small file placed on Your Device. You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, You may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will refuse Cookies, our Service may use Cookies.</li>
-                    <li><strong>Flash Cookies.</strong> Certain features of our Service may use local stored objects (or Flash Cookies) to collect and store information about Your preferences or Your activity on our Service. Flash Cookies are not managed by the same browser settings as those used for Browser Cookies. For more information on how You can delete Flash Cookies, please read 'Where can I change the settings for disabling, or deleting local shared objects?' available at <a href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_" rel="external nofollow noopener noreferrer" target="_blank">https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_</a></li>
+                    <li><strong>Flash Cookies.</strong> Certain features of our Service may use local stored objects (or Flash Cookies) to collect and store information about Your preferences or Your activity on our Service. Flash Cookies are not managed by the same browser settings as those used for Browser Cookies. For more information on how You can delete Flash Cookies, please read &apos;Where can I change the settings for disabling, or deleting local shared objects?&apos; available at <a href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_" rel="external nofollow noopener noreferrer" target="_blank">https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_</a></li>
                     <li><strong>Web Beacons.</strong> Certain sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of a certain section and verifying system and server integrity).</li>
                 </ul>
-                <p className="mb-4">Cookies can be 'Persistent' or 'Session' Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser.</p>
+                <p className="mb-4">Cookies can be &apos;Persistent&apos; or &apos;Session&apos; Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser.</p>
                 <p className="mb-4">We use both Session and Persistent Cookies for the purposes set out below:</p>
                 <ul className=" list-inside mb-4">
                     <li><p><strong>Necessary / Essential Cookies</strong></p>
@@ -86,7 +86,7 @@ const PrivacyPolicy = () => {
                     </li>
                 </ul>
                 <h2 className="subHeadPvcH2 text-xl font-semibold mb-2">Links to Other Websites</h2>
-                <p className="mb-4">Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
+                <p className="mb-4">Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party&apos;s site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
                 <p className="mb-4">We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
                 <h2 className="subHeadPvcH2 text-xl font-semibold mb-2">Changes to this Privacy Policy</h2>
                 <p className="mb-4">We may update our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>

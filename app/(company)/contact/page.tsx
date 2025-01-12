@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function Component() {
     return (
@@ -8,7 +8,7 @@ export default function Component() {
                 <div className="space-y-6 text-center">
                     <h1 className="text-4xl font-bold tracking-tight">Get in Touch</h1>
                     <p className="text-muted-foreground text-lg max-w-[700px] mx-auto">
-                        Have a question or need help? Don't hesitate to reach out.
+                        Have a question or need help? Don&apos;t hesitate to reach out.
                     </p>
                 </div>
                 <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
