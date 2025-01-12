@@ -65,7 +65,7 @@ const RedirectContent = () => {
                     </p>
                     <div className="flex justify-center items-center">
                         <motion.a
-                            href="https://www.producthunt.com/posts/nocage?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-nocage"
+                            href="https://www.producthunt.com/posts/nocage"
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.05 }}
