@@ -33,7 +33,7 @@ const HeroSection = () => {
             }
 
             const rollNumberWithoutSlash = processedRollNumber.split("/").join("-");
-            router.push(`/redirect?redirect_url=${rollNumberWithoutSlash}`);
+            router.push(`/${rollNumberWithoutSlash}`);
         }
         setIsLoading(false);
     };
@@ -61,7 +61,7 @@ const HeroSection = () => {
                 <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center  lg:scale-125">
                     <Input
                         type="text"
-                        placeholder="Enter your roll number"
+                        placeholder="2k21/mc/79"
                         className="max-w-xs"
                         value={rollNumber}
                         onChange={(e) => setRollNumber(e.target.value)}
