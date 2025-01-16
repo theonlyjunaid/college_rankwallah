@@ -39,6 +39,7 @@ export default function Header() {
   gtag('config', 'G-GCKM20W05T');`}
             </Script>
             <Script src="https://www.googletagmanager.com/gtag/js?id=G-GCKM20W05T" />
+            <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7529178369694237" crossOrigin="anonymous" />
 
             <div className="container flex h-16 items-center justify-between px-4">
                 <Link href="/" className="flex items-center space-x-2 group">
