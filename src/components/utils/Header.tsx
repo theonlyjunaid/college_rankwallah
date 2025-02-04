@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import { GraduationCap, Menu, X } from "lucide-react";
 import Script from 'next/script';
+import Image from 'next/image';
 // import { UserButton, SignInButton, SignedOut, SignedIn } from "@clerk/nextjs";
 
 export default function Header() {
@@ -39,8 +40,7 @@ export default function Header() {
 
             <div className="container flex h-16 items-center justify-between px-4">
                 <Link href="/" className="flex items-center space-x-2 group">
-                    <GraduationCap className="h-8 w-8 text-gray-800 transition-transform group-hover:scale-110" />
-                    <span className="text-2xl font-bold text-gray-800 group-hover:text-gray-900">DTU Rankwallah</span>
+                    <Image src="/rank.png" alt="DTU Rankwallah" width={200} height={70} />
                 </Link>
 
 
