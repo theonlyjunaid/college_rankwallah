@@ -31,7 +31,7 @@ export default function Result({ roll_number }: {
                 setUser(userData);
             } catch (error) {
                 console.error('Error fetching user data:', error);
-                setError('Error loading user data. Please try again later.');
+                setError('Error loading user data. Please try again later..');
             } finally {
                 setIsLoading(false);
             }
