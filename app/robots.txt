@@ -1,4 +1,5 @@
-User-Agent: *
+User-agent: *
+Disallow:
 
 
 
