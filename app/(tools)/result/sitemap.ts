@@ -11,10 +11,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
 
-        const res = await fetch(`${baseUrl}/api/result/getall`, {
-            next: { revalidate: 3600 }, // Cache for 1 hour
-            signal: controller.signal
-        });
+        const res = await fetch(`${baseUrl}/api/result/getall`);
 
         clearTimeout(timeoutId);
 
