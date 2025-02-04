@@ -20,11 +20,7 @@ export default function Header() {
     }, []);
 
     const navItems = [
-        { name: "Features", href: "#features" },
-        { name: "Top Performers", href: "#top-performers" },
-        { name: "How It Works", href: "#how-it-works" },
-        { name: "Testimonials", href: "#testimonials" },
-        { name: "FAQ", href: "#faq" }
+        { name: "Result Analysis", href: "/result" }
     ];
 
     return (
@@ -47,13 +43,7 @@ export default function Header() {
                     <span className="text-2xl font-bold text-gray-800 group-hover:text-gray-900">DTU Rankwallah</span>
                 </Link>
 
-                {pathname !== "/" && <Link
-                    href="/"
-                    className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors rounded-lg hover:bg-gray-100 flex items-center gap-2"
-                >
 
-                    Search Result
-                </Link>}
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex gap-8">
                     {navItems.map((item) => (
