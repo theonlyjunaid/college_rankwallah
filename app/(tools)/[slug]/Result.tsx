@@ -1,5 +1,5 @@
 "use client"
-import { CompanyTierData, ResultData } from "../../types/result";
+import { CompanyTierData, ResultData } from "../../../types/result";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { PieChart, Pie, Cell, ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import { useState, useEffect } from "react";

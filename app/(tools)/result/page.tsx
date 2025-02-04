@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { useRouter } from 'next/navigation'
 
-const page = () => {
+const Page = () => {
     const [rollNumber, setRollNumber] = useState("")
     const router = useRouter()
     const [isLoading, setIsLoading] = useState(false)
@@ -46,7 +46,7 @@ const page = () => {
                         DTU Result Analysis & Placements Opportunities Information
                     </h1>
                     <p className="text-xl text-gray-600 mb-8">
-                        Welcome to Delhi Technological University's comprehensive result analysis platform. Our advanced analytics tool provides in-depth insights into your academic journey, helping you make informed decisions about your educational path.
+                        Welcome to Delhi Technological University&apos;s comprehensive result analysis platform. Our advanced analytics tool provides in-depth insights into your academic journey, helping you make informed decisions about your educational path.
                     </p>
                     <div className="flex justify-center gap-8 text-center">
                         {[
@@ -118,10 +118,10 @@ const page = () => {
                 <div className="bg-gray-900 text-white p-8 rounded-xl mt-8">
                     <h2 className="text-2xl font-bold mb-4">Why Use Our Result Analysis Tool?</h2>
                     <p className="text-gray-300 mb-6">
-                        Our platform offers the most comprehensive and accurate analysis of DTU academic results. Whether you're a first-year student trying to understand your academic standing or a final-year student preparing for placements, our tool provides valuable insights to help you succeed in your academic journey.
+                        Our platform offers the most comprehensive and accurate analysis of DTU academic results. Whether you&apos;re a first-year student trying to understand your academic standing or a final-year student preparing for placements, our tool provides valuable insights to help you succeed in your academic journey.
                     </p>
                     <p className="text-gray-300">
-                        With features like performance tracking, CGPA prediction, and comparative analysis, you'll have all the information you need to make informed decisions about your academic future. Join thousands of DTU students who are already benefiting from our advanced analytics platform.
+                        With features like performance tracking, CGPA prediction, and comparative analysis, you&apos;ll have all the information you need to make informed decisions about your academic future. Join thousands of DTU students who are already benefiting from our advanced analytics platform.
                     </p>
                 </div>
             </section>
@@ -129,4 +129,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
