@@ -7,10 +7,10 @@ export async function POST(req: Request) {
         await connectToDB();
 
         const body = await req.json();
-        const { clerkId, name, email, rollNumber } = body;
+        const { clerkId, name, email } = body;
 
         // Validate required fields
-        if (!clerkId || !name || !email || !rollNumber) {
+        if (!clerkId || !name || !email) {
             return new NextResponse("Missing required fields", { status: 400 });
         }
 
@@ -20,35 +20,19 @@ export async function POST(req: Request) {
         });
 
         if (existingUser) {
-            await User.updateOne(
-                {
-                    clerkId: clerkId,
-                },
-                {
-                    $set: {
-                        name: name,
-                        email: email,
-                        role: 'USER',
-                        rollNumber: rollNumber,
-                        onboarded: true
-                    }
-                }
-            );
-
-            return NextResponse.json({ clerkId: clerkId, name: name, email: email, rollNumber: rollNumber });
+            return new NextResponse("User already exists", { status: 400 });
         }
 
         // Create new user
-        await User.create({
+        const user = await User.create({
             clerkId: clerkId,
             name: name,
             email: email,
             role: 'USER',
-            rollNumber: rollNumber,
             onboarded: true
         });
 
-        return NextResponse.json({ clerkId: clerkId, name: name, email: email, rollNumber: rollNumber });
+        return NextResponse.json(user);
 
     } catch (error) {
         console.log("[USER_CREATE]", error);

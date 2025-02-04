@@ -1,34 +1,22 @@
-import { currentUser } from '@clerk/nextjs/server';
-import { redirect } from 'next/navigation';
 import React from 'react'
-import User from '../../lib/models/user.model';
-import { connectToDB } from '../../lib/mongodb';
+import OnboardingPage from './Onboarding'
+import { currentUser } from '@clerk/nextjs/server';
 
-const page = async () => {
-    const user = await currentUser();
-    if (!user) {
-        return redirect('/');
+const Page = async () => {
+    try {
+        const user = await currentUser();
+        if (!user) {
+            return <div>User not found</div>;
+        }
+        return (
+            <div>
+                <OnboardingPage />
+            </div>
+        )
+    } catch (error) {
+        console.log(error);
+        return <div>Error</div>;
     }
-
-    await connectToDB();
-    const userData = await User.findOne({ email: user.emailAddresses[0].emailAddress });
-    if (userData?.onboarded) {
-        return redirect('/dashboard');
-    }
-    await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/user/create`, {
-        method: 'POST',
-        body: JSON.stringify({
-            clerkId: user.id,
-            name: user.firstName + " " + user.lastName,
-            email: user.emailAddresses[0].emailAddress
-        })
-    });
-    return (
-        <div>
-            <h1>Onboarding</h1>
-            {user?.firstName}
-        </div>
-    )
 }
 
-export default page
+export default Page
